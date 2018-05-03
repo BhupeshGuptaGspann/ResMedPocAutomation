@@ -1,5 +1,5 @@
 Feature: POC scenerios
- 
+ @demo
  Scenario: Verify Login with valid Credentials
   Given user is on Login Page
   Then login with username and Password
@@ -12,7 +12,7 @@ Feature: POC scenerios
   Then login with invalid username and Password
   Then verify and accept the alert with message Invalid username or password
 
- @demo
+ 
  Scenario: Place Order by choosing product from Product Catalog
  Given user is on Login Page
  Then login with username and Password
@@ -25,7 +25,7 @@ Feature: POC scenerios
  Then click on Logout button
  Then verify user is on Login Page
 
- @demo
+
 Scenario: Place Order by choosing product from Quick Entry
  Given user is on Login Page
  Then login with username and Password
@@ -37,7 +37,7 @@ Scenario: Place Order by choosing product from Quick Entry
  Then click on Logout button
  Then verify user is on Login Page
 
- @demo
+ 
 Scenario: Place Order by choosing product from Search Tab
  Given user is on Login Page
  Then login with username and Password
@@ -49,7 +49,7 @@ Scenario: Place Order by choosing product from Search Tab
  Then click on Logout button
  Then verify user is on Login Page
  
- @demo
+
 Scenario: Verify Save Cart functionality at Place Order tab
  Given user is on Login Page
  Then login with username and Password
@@ -64,7 +64,7 @@ Scenario: Verify Save Cart functionality at Place Order tab
  Then click on Logout button
  Then verify user is on Login Page
  
- @demo
+ 
  Scenario: End to end positive workflow of placing an order
  Given user is on Login Page
  Then login with username and Password
