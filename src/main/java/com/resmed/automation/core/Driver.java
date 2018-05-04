@@ -32,6 +32,7 @@ public class Driver {
 			System.setProperty("webdriver.chrome.driver",
 					OS.isFamilyWindows() ? System.getProperty("user.dir") + "\\Drivers\\chromedriver.exe"
 							: System.getProperty("user.dir") + "/drivers/chromedriver");
+			System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src *");
 			caps = DesiredCapabilities.chrome();
 			driverPool.set(new ChromeDriver());
 		} else if (browser.equalsIgnoreCase("ie")) {
